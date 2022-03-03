@@ -18,10 +18,7 @@ app.use(offerRoutes);
 const filterRoutes = require("./routes/filtres");
 app.use(filterRoutes);
 
-// mongoose.connect("mongodb://localhost/vinted");
-// mongoose.connect(
-//   "mongodb+srv://yiyi41:goYOWmHNBa8EQdxT@cluster0.cjphb.mongodb.net/vinted"
-// );
+
 app.all("*", (req, res) => {
   res.json("all routes");
 });
